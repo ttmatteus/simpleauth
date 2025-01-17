@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:17
+    container_name: simpleauth
+    environment:
+      POSTGRES_USER: casco
+      POSTGRES_PASSWORD: 123teste
+      POSTGRES_DB: simauthdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - my_network
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  my_network:
+    driver: bridge
