@@ -7,7 +7,6 @@ import { AuthTokenResponseDto } from './dto/auth-token-response.dto';
 import { JwtAuthGuard } from './jwt-auth.guard';
 
 @Controller('auth')
-@UseGuards(JwtAuthGuard)
 export class AuthController {
     constructor(private readonly authService: AuthService) {}
 
