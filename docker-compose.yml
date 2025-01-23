@@ -7,7 +7,7 @@ services:
     environment:
       POSTGRES_USER: casco
       POSTGRES_PASSWORD: 123teste
-      POSTGRES_DB: simauthdb
+      POSTGRES_DB: simpleauthdb
     ports:
       - "5432:5432"
     volumes:
