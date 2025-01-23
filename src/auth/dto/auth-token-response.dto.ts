@@ -1,7 +1,7 @@
 export class AuthTokenResponseDto {
-    acess_token: string;
+    acessToken: string;
 
     constructor(acessToken: string) {
-        this.acess_token = acessToken;
+        this.acessToken = acessToken;
     }
 }
